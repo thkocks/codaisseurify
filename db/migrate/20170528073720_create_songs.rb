@@ -5,7 +5,6 @@ class CreateSongs < ActiveRecord::Migration[5.1]
       t.references :album, foreign_key: true
       t.references :artist, foreign_key: true
       t.string :song_genre
-      t.references :user, foreign_key: true
       t.decimal :length
       t.string :release_date
 
